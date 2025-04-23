@@ -1,0 +1,45 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "catkin build (workspace)",
+      "type": "shell",
+      "command": "catkin build  --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+      "group": "build",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "detail": "Build a workspace"
+    },
+    {
+      "label": "catkin build (package)",
+      "type": "shell",
+      "command": "catkin build --this --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+      "group": "build",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "detail": "Build a package"
+    },
+    {
+      "label": "catkin clean (package)",
+      "type": "shell",
+      "command": "catkin clean --this -y",
+      "group": "build",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "detail": "Clean a package"
+    },
+    {
+      "label": "catkin clean (workspace)",
+      "type": "shell",
+      "command": "catkin clean -y",
+      "group": "build",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "detail": "Clean a workspace"
+    }
+  ]
+}

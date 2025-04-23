@@ -1,0 +1,29 @@
+{
+  // Core Editor
+  "editor.formatOnSave": true,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.rulers": [
+    120
+  ],
+  "trailing-spaces.trimOnSave": true,
+  // C++
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.default.cppStandard": "c++17",
+  "C_Cpp.errorSquiggles": "enabled",
+  "C_Cpp.formatting": "clangFormat",
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave": true
+  },
+  "C_Cpp.intelliSenseEngine": "default",
+  "cmake.buildDirectory": "${workspaceFolder}/../../build",
+  "C_Cpp.default.compileCommands": "${workspaceFolder}/../../build/compile_commands.json",
+  "C_Cpp.autoAddFileAssociations": false,
+  "python.autoComplete.extraPaths": [
+    "/opt/ros/noetic/lib/python3/dist-packages"
+  ],
+  "python.analysis.extraPaths": [
+    "/opt/ros/noetic/lib/python3/dist-packages"
+  ]
+}
