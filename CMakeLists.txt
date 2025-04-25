@@ -9,6 +9,7 @@ find_package(OpenCV 4 REQUIRED)
 find_package(catkin REQUIRED
   rospy
   roscpp
+  roslib
   cv_bridge
   sensor_msgs
 )
